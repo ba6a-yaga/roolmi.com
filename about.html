@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="{{ .Main.CurrentLang }}">
+<head>
+    <meta name="google-site-verification" content="3xyKyBiKztStm8JwORazAd7Vl92yan19HRFLKguvrEA" />
+    <title>{{ .Body.Title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />  
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>    
+<body>
+<div class="wrap {{ .Main.CurrentLang }}">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-12 col-xs-12 col-sm-12">
+                    <a class="logo" href="/"></a>
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <nav class="navbar collapse navbar-collapse menu">
+                        <ul class="nav navbar-nav">
+                            {{ range .Main.Menu }}
+                            <li><a href="{{ .Source }}">{{ .Title }}</a></li>
+                            {{end}}
+
+                        </ul>
+                        {{ if eq .Main.CurrentLang "en" }}
+                        <a class="lang lang_en" href="/select_lang?id=ru">RU</a>
+                        {{ else if eq .Main.CurrentLang "ru" }}
+                        <a class="lang lang_ru" href="/select_lang?id=en">EN</a>
+                        {{ end }}
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>   
+
+    <div class="page-header">
+        <h1>{{ .Body.Title }}</h1>
+    </div>
+    <div class="page-content about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <img src="img/about_workflow.png" />
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <ul class="technology">
+                                <li>WebGL</li>
+                                <li>Unity3d</li>
+                                <li>.NET - C#</li>
+                                <li>JavaScript</li>
+                                <li>NodeJS</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6">
+                            <ul class="laguages">
+                                <li>Go</li>
+                                <li>Docker</li>
+                                <li>AWS</li>
+                                <li>PostgreSQL</li>
+                                <li>Redis</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content bottom-content">
+        <div class="container">
+            <div class="row">
+                <div class="body_content">
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        {{ range .Body.Text }}
+                        <p>
+                            {{ . }}
+                        </p>
+                        {{ end }}
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <img src="img/mac.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container" id="wrap">
+            <div class="footer_text"><p>{{ .Main.Footer.Text }}<email><a href="mailto:{{ .Main.Footer.Email }}"><strong>{{ .Main.Footer.Email }}</strong></a></email></p></div>
+            <div class="copyright"><span>&copy; {{ .Main.Footer.Copyright }}</span></div>
+        </div>
+    </footer>
+</div>
+
+</body>    
+</html>

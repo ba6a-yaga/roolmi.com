@@ -1,0 +1,20 @@
+{
+  "NewsTitle":"News",
+  "Body":{
+    "Title":"Roolmi Studio",
+    "Text":[
+      "When we spend time planning - it gets bigger» The Peter principle",
+      "Our studio was founded in 2016 with the aim of creating ideological games and different projects, which will not obey the rules of the game industry, where there will not be «PayToWin» or «FreeToPlay» models in which buying of paid content determines the success of the game — this is our relatively new approach to the creation of projects and ensure of their commercial component. Before creating their projects our team developed dozens of games for different gaming companies, and projects on automation of business processes for corporate clients. We have the experience and have the most important thing is the desire to establish something really unique and special. As a confirmation of this  there are a few projects which will be presented on the website where the first one («FormulaWeb») is a simulator race engineer unique in its genre, and the second one («SpaceWar») is a game the sandbox of relationship of people in the gaming environment. We have just started in this way and will be happy to various proposals for cooperation - no outsource only interesting projects, only hardcore ;)"
+    ]
+  },
+  "Banners":[
+    {
+      "Image":"img/bacterium_banner.png",
+      "Source":"#"
+    },
+    {
+      "Image":"img/f1_baner.png",
+      "Source":"#"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "Body":{
+    "Title":"Casual Games",
+    "Text":[
+      "Our first game project is from series of casual applications is made for you — play for free and become a part of our game community. You have an opportunity to fight with different kinds of evil bacteria (maybe with good of ones), and to go through many difficulty levels. On your way you will meet a boss named Bacterievich, who will try to save his minions. Play our games in a browser and also on your mobile devices absolutely for free and without a loss of game progress, start it in a browser and keep it up on your smartphone or conversely. Achieve high results and beat achievements of your friends! Have fun with us!"
+    ],
+    "Image":[
+      "img/casual_image.png",
+      "img/ba_screen1.png",
+      "img/ba_screen2.png",
+      "img/ba_screen3.png"
+    ]
+  }
+}

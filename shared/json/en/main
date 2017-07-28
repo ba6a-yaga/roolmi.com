@@ -1,0 +1,36 @@
+{
+  "Title":"Roolmi Studio",
+  "Description":"Description",
+  "Author":"Roolmi Studio",
+  "CurrentLang":"",
+  "Menu":[
+    {
+      "Title":"About us",
+      "Source":"/about"
+    },
+    {
+      "Title":"Casual Games",
+      "Source":"/casual"
+    },
+    {
+      "Title":"Formula Sport",
+      "Source":"/formula_sport"
+    },
+    {
+      "Title":"RocknRolla",
+      "Source":"/rocknrolla"
+    },
+    {
+      "Title":"Coming soon",
+      "Source":"#"
+    }
+  ],
+  "Footer":{
+    "Crumbs":[],
+    "Categories":[],
+    "Button":{},
+    "Email":"partners@roolmi.com",
+    "Text":"We grow and develop and realize our ideas in a variety of projects. Every our application is a step towards our goal. We put a part of ourselves into our developments and we are always open to suggestions and a partnership.",
+    "Copyright":"Roolmi Studio 2016-2017"
+  }
+}
