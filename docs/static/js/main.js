@@ -14,15 +14,6 @@ $(document).ready(function() {
     });
     $("#background_full").click(displayImageOff); 
     
-    $('.banners-container').slick({
-      dots: true,
-      arrows: false,
-      speed: 300,
-      autoplay: true,
-      autoplaySpeed: 5000,
-      slidesToShow: 1,
-    });
-    
     function setNavigation() {
         var path = window.location.pathname;
         path = path.replace(/\/$/, "");

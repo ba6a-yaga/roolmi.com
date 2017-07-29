@@ -6,19 +6,19 @@
   "Menu":[
     {
       "Title":"О нас",
-      "Source":"/about"
+      "Source":"about.html"
     },
     {
       "Title":"Казуальные игры",
-      "Source":"/casual"
+      "Source":"casual.html"
     },
     {
       "Title":"Формула Спорт",
-      "Source":"/formula_sport"
+      "Source":"formulasport.html"
     },
     {
       "Title":"RocknRolla",
-      "Source":"/rocknrolla"
+      "Source":"management.html"
     },
     {
       "Title":"Скоро",

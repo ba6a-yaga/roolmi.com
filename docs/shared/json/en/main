@@ -6,19 +6,19 @@
   "Menu":[
     {
       "Title":"About us",
-      "Source":"/about"
+      "Source":"about.html"
     },
     {
       "Title":"Casual Games",
-      "Source":"/casual"
+      "Source":"casual.html"
     },
     {
       "Title":"Formula Sport",
-      "Source":"/formula_sport"
+      "Source":"formulasport.html"
     },
     {
       "Title":"RocknRolla",
-      "Source":"/rocknrolla"
+      "Source":"management.html"
     },
     {
       "Title":"Coming soon",
