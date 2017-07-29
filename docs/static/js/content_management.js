@@ -22,7 +22,7 @@ $(document).ready(function() {
     function setContent(data) {
         var list = [];
         $('#_x_page-title').append(data.Body.Title);
-        $('#_x_page-img').append("<img src="+data.Body.Image[0]+">")
+        $('#_x_page-img').append("<img src="+data.Body.Image[0]+" />")
         for (i in data.Body.Text) {
             $('#_x_page-text').append(data.Body.Text[i])
         }
