@@ -28,7 +28,7 @@ $(document).ready(function() {
         }
         for (i in data.Body.Image) {
             if (i != 0) {
-                $('#_x_page-imgs').append("<li class=\"screen col-md-4 col-sm-4  col-xs-12\"><img src="+data.Body.Image[i]+"/></li>")
+                $('#_x_page-imgs').append("<li class=\"screen col-md-4 col-sm-4  col-xs-12\"><img src="+data.Body.Image[i]+"></li>")
             }
         }
     }
