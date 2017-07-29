@@ -12,7 +12,7 @@ $(document).ready(function() {
         $.getJSON("shared/json/en/news", function(data) {
             news = data
         })
-        $('#_x_lang').append("<a class=\"lang lang_en\" href=\"/select_lang?id=ru\">RU</a>");
+        $('#_x_lang').append("<a class=\"lang lang_en\" href=\"index.html\" onclick=\"setLang()\">RU</a>");
     } else {
         $.getJSON("shared/json/ru/index", function(data) {
             setContent(data)
@@ -23,7 +23,7 @@ $(document).ready(function() {
         $.getJSON("shared/json/ru/news", function(data) {
             news = data
         })
-        $('#_x_lang').append("<a class=\"lang lang_ru\" href=\"/select_lang?id=en\">EN</a>");
+        $('#_x_lang').append("<a class=\"lang lang_ru\" href=\"index.html\" onclick=\"setLang()\">EN</a>");
     }
 
     function setContent(data) {

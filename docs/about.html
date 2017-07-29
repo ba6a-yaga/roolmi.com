@@ -33,6 +33,17 @@
                 </div>
             </div>
         </div>
+        <script>
+            function setLang() {
+                var lang = Cookies.get('current_lang');
+                if (lang == "en") {
+                    lang = "ru";
+                } else {
+                    lang = "en";
+                }
+                Cookies.set('current_lang',lang);
+            }
+        </script>
     </header>   
 
     <div class="page-header">

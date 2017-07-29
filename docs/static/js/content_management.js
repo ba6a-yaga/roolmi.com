@@ -2,7 +2,7 @@ $(document).ready(function() {
     var lang = Cookies.get('current_lang');
 
     if (lang == "en") {
-        $('#_x_lang').append("<a class=\"lang lang_en\" href=\"/select_lang?id=ru\">RU</a>");
+        $('#_x_lang').append("<a class=\"lang lang_en\" href=\"management.html\" onclick=\"setLang()\">RU</a>");
         $.getJSON("shared/json/en/main", function(data) {
             setMenu(data)
         })
@@ -10,7 +10,7 @@ $(document).ready(function() {
             setContent(data)
         })
     } else {
-        $('#_x_lang').append("<a class=\"lang lang_ru\" href=\"/select_lang?id=en\">EN</a>");
+        $('#_x_lang').append("<a class=\"lang lang_ru\" href=\"management.html\" onclick=\"setLang()\">EN</a>");
         $.getJSON("shared/json/ru/main", function(data) {
             setMenu(data)
         })
