@@ -35,7 +35,19 @@ $(document).ready(function() {
             list[i] = "<div class=\"banners-image\"><img src=\""+data.Banners[i].Image+"\" alt=\"\"></div>";
             $('#_x_banners').append(list[i]);
         }
+		setBanners()
     }
+	
+	function setBanners() {
+		$(".banners .banners-container").slick({
+		  dots: true,
+		  arrows: false,
+		  speed: 300,
+		  autoplay: true,
+		  autoplaySpeed: 5000,
+		  slidesToShow: 1,
+		});
+	}
 
     function setMenu(data) {
         var list = []
