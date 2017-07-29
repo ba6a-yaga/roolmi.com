@@ -177,8 +177,8 @@ header .row .col{
 }
 .page-header h1{
     margin: 0;
-    padding-top:40px;
-    padding-bottom:40px;
+    padding-top:25px;
+    padding-bottom:25px;
 	color: #757575;
     background: #f2f2f2;
    -webkit-text-stroke-width: 2px;
@@ -310,7 +310,6 @@ a.page_reload span{
     padding-left:30px;
 }
 
-
 .page-main .wrap {
     background: url("../img/main_bg.png") center 40px no-repeat;
     background-size: 1920px auto;
@@ -324,6 +323,12 @@ a.page_reload span{
     margin:60px auto 30px auto;
 }
 
+#_x_news p {
+    margin-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 
 .title_content {
     position: relative;
@@ -488,12 +493,6 @@ a.full-article-link i {
     padding-left:10px;
     padding-top:0px;
 }
-.content-container {
-}
-
-
-
-
 .wrap {
     min-height: 100%;
     height: auto !important;
@@ -511,29 +510,32 @@ footer .container {
     padding:10px 0px;
 }
 
+footer #_x_host {
+    background-color: #212121;
+    text-align: right;
+    padding: 4% 10% 6%;
+    font-size: 15px;
+    color:#c0c0c0;
+    display: block;
+}
+
 footer p {
-    background: #575757;
-    line-height: 1.2em;
-    font-size: 12px;
-    text-align: left;
-    padding: 0;
-    margin:0;
+    line-height: 1.6em;
+    padding: 15px 0 10px 0;
 }
 footer .footer_text {
-    padding-right:215px; 
+    font-size: 15px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0 15px;
 }
-footer p a {
-    text-decoration: none;
-    color:#f0f0f0;
-    font-size: 12px;
-}
+
 footer p a:hover,footer p a:active,footer p a:focus {
     text-decoration: none;
     color:#f0f0f0;
 }
 footer .copyright {
-    position: absolute;
-    right:0;
     font-size: 12px;
     top:2px;
 }

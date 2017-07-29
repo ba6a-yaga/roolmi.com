@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="{{ .Main.CurrentLang }}">
+<html lang="ru">
 <head>
     <meta name="google-site-verification" content="3xyKyBiKztStm8JwORazAd7Vl92yan19HRFLKguvrEA" />
-    <title>{{ .Body.Title }}</title>
+    <title>Roolmi Studio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />  
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link href="css/slick.css" rel="stylesheet" type="text/css" />
-    <link href="css/slick-theme.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/slick.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/slick-theme.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="static/js/slick.min.js"></script>
+    <script src="static/js/js.cookie.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
 </head>    
 <body class="page-main">
+<div id="vk_comments"></div>
 <div class="wrap" id="wrap">
     <header>
         <div class="container">
@@ -28,31 +29,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <nav class="navbar collapse navbar-collapse menu">
-                        <ul class="nav navbar-nav">
-                            {{ range .Main.Menu }}
-                                <li><a href="{{ .Source }}">{{ .Title }}</a></li>
-                            {{end}}
-
+                    <nav class="navbar collapse navbar-collapse menu" id="_x_lang">
+                        <ul class="nav navbar-nav" id="_x_menu">
                         </ul>
-                        {{ if eq .Main.CurrentLang "en" }}
-                        <a class="lang lang_en" href="/select_lang?id=ru">RU</a>
-                        {{ else if eq .Main.CurrentLang "ru" }}
-                        <a class="lang lang_ru" href="/select_lang?id=en">EN</a>
-                        {{ end }}
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+
     <div class="content-wrapper">
         <div class="content-container">
             <div class="top-banner">
                 <div class="banners">
-                    <div class="banners-container">
-                        {{ range .Banners }}
-                        <div class="banners-image"><img src="{{ .Image }}" alt=""></div>
-                        {{ end }}
+                    <div class="banners-container" id="_x_banners">
                     </div>   
                 </div>
             </div>
@@ -64,10 +54,8 @@
             <div class="row">
                 <div class="col col-md-12 col-xs-12 col-sm-12">
                     <div id="body_content">
-                        <h2 class="title_content">{{index .Body.Text 0}}</h2>
-                        <p class="text_content">
-                            {{index .Body.Text 1}}
-                        </p>
+                        <h2 class="title_content" id="_x_title_content"></h2>
+                        <p class="text_content" id="_x_text_content"></p>
                     </div>
                 </div>
             </div>
@@ -77,28 +65,14 @@
     <div class="page-header news-page-header-container">
         <div class="news-page-header">
             <div class="news-title"></div>
-            <h1>{{ .NewsTitle }}</h1>
+            <h1 id="_x_news-title"></h1>
         </div>
     </div>
+
     <div class="content-wrapper news-block">
         <div class="container">
             <div class="row">
-                <div class="col col-md-12 col-xs-12 col-sm-12">
-                    {{ range .News }}
-                    <article class="short-news">
-                       <div class="news-info clearfix">
-                        <h2  class="title_content">{{ .Title }}</h2>
-                        <span class="date">{{ .Date }}</span>
-                        <a class="full-article-link" href="{{ .Source }}"><i class="fa-share fa"></i>{{ .Hint }}</a>
-                        <p class="text_content">
-                            {{ .Text }}
-                        </p>
-                        </div>
-                        <div class="image-contaner">
-                            <img src="{{ .Image }}" />
-                        </div>
-                    </article>
-                    {{ end }}
+                <div class="col col-md-12 col-xs-12 col-sm-12" id="_x_news">
                 </div>
             </div>
         </div>
@@ -108,22 +82,19 @@
     
 <footer>
     <div class="container" id="wrap">
-        <div class="footer_text"><p>{{ .Main.Footer.Text }}<email><a href="mailto:{{ .Main.Footer.Email }}"><strong>{{ .Main.Footer.Email }}</strong></a></email></p></div>
-        <div class="copyright"><span>&copy; {{ .Main.Footer.Copyright }}</span></div>
+        <div class="footer_text" id="_x_footer"></div>
+    </div>
+    <div id="_x_host">
+        <div class="col col-md-3" id="_x_copyright"></div>
+        <div class="col col-md-8">
+            Proudly hosted by
+            <a href="https://github.com">
+                <img src="static/img/footer-logo.png" width="100" height="30" alt="GitHub • Social coding">
+            </a>
+        </div>
     </div>
 </footer>
-
-<script>
-   function slideRight() {
-        var position_x = $('#slider').css("background-position-x");
-        if (position_x == "0px" || position_x == "0%") {
-            $('#slider').css("background-position-x",100 + "%");
-        } else if (position_x == "100%") {
-            $('#slider').css("background-position-x",0 + "%");
-        }
-    }
-    $("#arrow_right").click(slideRight); 
-    $("#arrow_left").click(slideRight); 
-</script>    
+<script type="text/javascript" src="static/js/content.js"></script>
+<script type="text/javascript" src="static/js/main.js"></script>
 </body>    
 </html>

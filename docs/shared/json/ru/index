@@ -9,15 +9,15 @@
   },
   "Banners":[
     {
-      "Image":"img/1120х630_02.png",
+      "Image":"static/img/1120х630_02.png",
       "Source":"#"
     },
     {
-      "Image":"img/bacterium_banner.png",
+      "Image":"static/img/bacterium_banner.png",
       "Source":"#"
     },
     {
-      "Image":"img/1120х630_01.png",
+      "Image":"static/img/1120х630_01.png",
       "Source":"#"
     }
   ]

@@ -9,11 +9,11 @@
   },
   "Banners":[
     {
-      "Image":"img/bacterium_banner.png",
+      "Image":"static/img/bacterium_banner.png",
       "Source":"#"
     },
     {
-      "Image":"img/f1_baner.png",
+      "Image":"static/img/f1_baner.png",
       "Source":"#"
     }
   ]
