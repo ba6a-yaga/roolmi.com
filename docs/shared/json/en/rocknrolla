@@ -5,10 +5,10 @@
       "Every project begins with the idea which you want to realize. A pencil in a hand and a blank sheet give a start to a product, a description of it gives a start to responsible moment — a design. At this point many companies save time limited to sketchy road map and roughly dividing a project into big components that include a large number of small tasks. They make up a large percentage of development time. In our practice we faced products in a pre-release state. After analysis of a product there was preparing a list which showed real project readiness and adding to the development time up to 30% of the total time. Such factors forced us to resort to measures of significant limitation of a content and cutting down of general features. Our team uses a good practice — a practice of development design based on creating a large number of product experience. We go to step of creation of product architecture starting with a description of the technical features of a project and creation of necessary documentation. A planning of all stages of development begins after technical base approval. Each cycle is divided into small tasks, then a timeline, a priority and an order of each of them are calculated. In this way we get a roadmap with a high accuracy of project deadlines. A project is completed on time is a serious contribution to the future success."
     ],
     "Image":[
-      "img/browser_tablet_phone.png",
-      "img/mn_screen_3.png",
-      "img/mn_screen_2.png",
-      "img/mn_screen_1.png"
+      "static/img/browser_tablet_phone.png",
+      "static/img/mn_screen_3.png",
+      "static/img/mn_screen_2.png",
+      "static/img/mn_screen_1.png"
     ]
   }
 }

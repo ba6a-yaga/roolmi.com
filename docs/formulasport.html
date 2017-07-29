@@ -1,53 +1,43 @@
 <!DOCTYPE html>
-<html lang="{{ .Main.CurrentLang }}">
+<html>
 <head>
+    <title>Roolmi studio</title>
     <meta name="google-site-verification" content="3xyKyBiKztStm8JwORazAd7Vl92yan19HRFLKguvrEA" />
-    <title>{{ .Body.Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />  
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="static/js/js.cookie.js"></script>
+    <script type="text/javascript" src="static/js/content_fsport.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
 </head>    
 <body>
-<div class="wrap {{ .Main.CurrentLang }}">
+<div class="wrap">
     <header>
         <div class="container">
             <div class="row">
                 <div class="col col-md-12 col-xs-12 col-sm-12">
-                    <a class="logo" href="/"></a>
-
+                    <a class="logo" href="index.html"></a>
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <nav class="navbar collapse navbar-collapse menu">
-                        <ul class="nav navbar-nav">
-                            {{ range .Main.Menu }}
-                            <li><a href="{{ .Source }}">{{ .Title }}</a></li>
-                            {{end}}
-
+                    <nav class="navbar collapse navbar-collapse menu" id="_x_lang">
+                        <ul class="nav navbar-nav" id="_x_menu">
                         </ul>
-                        {{ if eq .Main.CurrentLang "en" }}
-                        <a class="lang lang_en" href="/select_lang?id=ru">RU</a>
-                        {{ else if eq .Main.CurrentLang "ru" }}
-                        <a class="lang lang_ru" href="/select_lang?id=en">EN</a>
-                        {{ end }}
                     </nav>
                 </div>
             </div>
         </div>
-    </header>
+    </header>  
 
     <div class="page-header">
-        <h1>{{ .Body.Title }}</h1>
+        <h1 id="_x_page-title"></h1>
     </div>
-
 
     <div id="background_full"> 
         <img />   
@@ -56,13 +46,11 @@
     <div class="page-content formula">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <img src="{{index .Body.Image 0}}" />
+                <div class="col-md-6 col-sm-12 col-xs-12" id="_x_page-img">
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12">
-                    {{ range .Body.Text }}
-                    <p>{{ . }}</p>
-                    {{ end }}
+                    <p id="_x_page-text">
+                    </p>
                     <a href="#" class="btn btn-app-store"><i class="fa fa-apple"></i> <span class="small">Coming soon on the</span><br><span class="big">App Store</span></a>
                     <a href="#" class="btn btn-windows-store"><i class="fa fa-windows-store"></i> <span class="small">Coming soon on the</span><br><span class="big">Windows Store</span></a>
                     <a href="#" class="btn btn-play-market"><i class="fa fa-play"></i> <span class="small">Coming soon on the</span><br><span class="big">Google play</span></a>
@@ -74,28 +62,28 @@
     <div class="page-content bottom-content">
         <div class="container">
             <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <ul class="screenshots row">
-                            {{ range $i,$e := .Body.Image }}
-                            {{ if ne $i 0 }}
-                            <li class="screen col-md-4 col-sm-4  col-xs-12"><img src="{{ $e }}"/></li>
-                            {{ end }}
-                            {{ end }}
-                        </ul>
-                    </div>
-                    
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <ul class="screenshots row" id="_x_page-imgs">
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+
     <footer>
         <div class="container" id="wrap">
-            <div class="footer_text"><p>{{ .Main.Footer.Text }}<email><a href="mailto:{{ .Main.Footer.Email }}"><strong>{{ .Main.Footer.Email }}</strong></a></email></p></div>
-            <div class="copyright"><span>&copy; {{ .Main.Footer.Copyright }}</span></div>
+            <div class="footer_text" id="_x_footer"></div>
+        </div>
+        <div id="_x_host">
+            <div class="col col-md-3" id="_x_copyright"></div>
+            <div class="col col-md-8">
+                Proudly hosted by
+                <a href="https://github.com">
+                    <img src="static/img/footer-logo.png" width="100" height="30" alt="GitHub • Social coding">
+                </a>
+            </div>
         </div>
     </footer>
-    <script>  
-    </script>
-
 </div>
 </body>    
 </html>

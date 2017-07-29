@@ -196,7 +196,7 @@ header .row .col{
 }
 .page-content p {
     color:#666666;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 24px;
     text-align: justify;
 }
@@ -621,7 +621,7 @@ footer .copyright {
         font-size: 30px;
     }
     .page-content .btn{
-        font-size: 14px;
+        font-size: 15px;
     }
     .page-content .btn .fa{
         width: 40px;
